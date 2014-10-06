@@ -102,7 +102,7 @@ public class PushPlugin extends CordovaPlugin {
 		Log.v(TAG, "sendJavascript: " + _d);
 
 		if (gECB != null && gWebView != null) {
-			gWebView.sendJavascript(_d); 
+			gWebView.loadUrl(_d);
 		}
 	}
 
